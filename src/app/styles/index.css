@@ -1,0 +1,20 @@
+@import "reset.css";
+@import "variables.css";
+@import "colors.css";
+
+
+.app {
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-main);
+    font-weight: 500;
+    min-height: 100vh;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}

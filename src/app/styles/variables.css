@@ -1,0 +1,9 @@
+:root {
+    --font-family-main: 'JetBrains Mono', monospace;
+    --font-size-main: 16px;
+
+    --border-radius-main: 4px;
+
+    --chip-height: 20px;
+    --input-height: 48px;
+}

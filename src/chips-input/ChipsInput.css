@@ -1,0 +1,111 @@
+.chips {
+    position: relative;
+}
+
+.chips-tag {
+    width: auto;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: var(--chip-text-color);
+    border-radius: var(--border-radius-main);
+    border: 2px solid transparent;
+    background-color: var(--chip-bg-color);
+    animation: appear 0.4s 1 ease;
+    transition: all 0.3s ease;
+
+    &.chips-tag-selected {
+        background-color: var(--chip-bg-color-selected);
+        border: 2px solid var(--chip-border-color-selected);
+    }
+}
+
+.chips-body {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    padding: 4px 12px;
+    background-color: var(--input-bg-color);
+    border-radius: var(--border-radius-main);
+    transition: all 0.3s ease;
+}
+
+.chips-input {
+    flex: 2;
+    border: none;
+    height: 42px;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 160px;
+    padding: 4px;
+    color: var(--chip-text-color);
+    background: none;
+    outline: none;
+}
+
+.chips-tag-input {
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 10px;
+    background: none;
+    outline: none;
+    resize: horizontal;
+    cursor: pointer;
+
+    &:active {
+        width: auto;
+    }
+
+    &:focus {
+        min-width: 10px;
+    }
+}
+
+.chips-delete-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        color: var(--chip-delete-icon-color);
+        height: 16px;
+        width: 16px;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        svg {
+            color: var(--chip-delete-icon-colo-hover);
+        }
+    }
+}
+
+.chips-error-block {
+    position: absolute;
+    bottom: -18px;
+    font-size: 12px;
+    color: var(--error-color);
+    display: none;
+    transition: opacity;
+
+    &.chips-error-block-error {
+        display: inline-block;
+        animation: appear 0.2s 1 ease;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

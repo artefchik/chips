@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "noImplicitAny": true,
+        "module": "ESNext",
+        "target": "es6",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "~/*": ["./src/*"],
+            "react": ["node_modules/@types/react"]
+        }
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS",
+            "resolveJsonModule": true
+        }
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

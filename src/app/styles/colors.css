@@ -1,0 +1,14 @@
+:root {
+    --input-bg-color: rgb(234, 240, 250);
+    --input-placeholder-color: rgb(118, 132, 156);
+    --input-text-color: rgb(58, 75, 108);
+
+    --chip-bg-color: rgb(188, 222, 254);
+    --chip-bg-color-selected: rgb(124, 183, 239);
+    --chip-border-color-selected: rgb(12, 142, 250);
+    --chip-text-color: rgb(0, 57, 97);
+    --chip-delete-icon-color: rgb(61, 110, 157);
+    --chip-delete-icon-colo-hover: rgb(108, 154, 201);
+
+    --error-color: rgb(176, 47, 47);
+}
